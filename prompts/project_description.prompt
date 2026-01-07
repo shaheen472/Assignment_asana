@@ -1,0 +1,21 @@
+You are generating a project description for an enterprise Asana workspace.
+
+Context:
+- Project name: {project_name}
+- Team: {team_name}
+- Project type: {project_type}
+
+Guidelines:
+- Describe the business or technical goal
+- Mention scope, not implementation details
+- Sound like internal planning documentation
+- Keep length to 2–4 sentences
+
+Example:
+
+"This project focuses on improving platform scalability and reliability
+to support upcoming customer growth. Work includes backend optimizations,
+infrastructure improvements, and cross-team coordination to ensure a
+smooth rollout."
+
+Generate a realistic project description.

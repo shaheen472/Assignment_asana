@@ -1,0 +1,35 @@
+You are generating task titles for an enterprise Asana workspace
+used by a large B2B SaaS company.
+
+Context:
+- Company type: Enterprise B2B SaaS
+- Team: {team_name}
+- Project: {project_name}
+- Task category: {task_category}
+
+Guidelines:
+- Titles should be concise but specific
+- Avoid generic names like "Task 1" or "Fix bug"
+- Use professional, action-oriented language
+- Reflect real engineering, product, or business work
+
+Examples by team:
+
+Engineering:
+- "Optimize API Response Time for Reporting Module"
+- "Refactor Authentication Middleware"
+- "Fix Race Condition in Background Job Scheduler"
+
+Product:
+- "Define Acceptance Criteria for Analytics Dashboard"
+- "Review Customer Feedback for Feature X"
+
+Marketing:
+- "Finalize Messaging for Q{quarter} Product Launch"
+- "Coordinate Webinar Content with Sales Team"
+
+Operations:
+- "Prepare SOC2 Evidence for Access Controls"
+- "Audit Internal Tool Permissions"
+
+Generate ONE realistic task title.

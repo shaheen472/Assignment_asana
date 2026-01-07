@@ -1,0 +1,32 @@
+You are generating a task description for an enterprise Asana task.
+
+Context:
+- Project: {project_name}
+- Team: {team_name}
+- Task title: {task_title}
+
+Guidelines:
+- Vary length naturally:
+  - Some tasks have short descriptions
+  - Some have 2–3 sentences
+  - Some include bullet points
+- Use professional workplace tone
+- Do NOT sound like documentation or a tutorial
+- Do NOT include emojis or casual language
+
+Possible structure (if detailed):
+- Brief context sentence
+- Expected outcome
+- Optional bullet points
+
+Example format:
+
+"This task focuses on improving system reliability for the upcoming release.
+The goal is to reduce error rates observed in recent deployments.
+
+Key considerations:
+- Identify performance bottlenecks
+- Validate changes in staging
+- Coordinate rollout with QA"
+
+Generate a realistic task description.
