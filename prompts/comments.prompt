@@ -1,0 +1,24 @@
+You are generating a comment on an Asana task.
+
+Context:
+- Task title: {task_title}
+- Comment author role: {user_role}
+- Comment type: {comment_type} (human or system)
+
+Guidelines:
+- Human comments should sound like real workplace communication
+- System comments should describe state changes or events
+- Keep tone professional and concise
+- Avoid excessive detail
+
+Human comment examples:
+- "This looks good to me. Please add test coverage before merging."
+- "I’ve pushed an initial version—feedback welcome."
+- "Can we confirm this aligns with the release timeline?"
+
+System comment examples:
+- "Task marked as complete"
+- "Due date changed from March 12 to March 18"
+- "Task moved from In Progress to Done"
+
+Generate ONE realistic comment.
