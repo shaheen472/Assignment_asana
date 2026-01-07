@@ -118,7 +118,7 @@ def main():
     )
 
     #Users
-    users = generate_users(org.org_id, count=2500)
+    users = generate_users(org.org_id, count=7500)
     insert_many(
         conn,
         "users",
