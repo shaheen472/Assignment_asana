@@ -15,6 +15,7 @@ def generate_teams(org_id: str) -> List[Team]:
                 org_id=org_id,
                 name=team_def["name"],
                 description=f"{team_def['function']} team at enterprise scale",
+                function=team_def["function"],
                 created_at=random_past_datetime(start_years_ago=4)
             )
         )
