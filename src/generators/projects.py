@@ -10,9 +10,14 @@ def generate_projects(org_id: str, teams) -> List[Project]:
     templates = load_project_templates()
 
     for team in teams:
+        # Use semantic team function (Engineering, Product, Marketing, Operations)
+        project_templates = templates.get(team.function)
+
+        if not project_templates:
+            continue  # safety guard
+
         for _ in range(random.randint(3, 7)):
-            status = project_status()
-            name = random.choice(templates[team.name.split()[0]])
+            name = random.choice(project_templates)
 
             projects.append(
                 Project(
@@ -21,7 +26,7 @@ def generate_projects(org_id: str, teams) -> List[Project]:
                     org_id=org_id,
                     name=name,
                     description=f"{name} for enterprise delivery",
-                    status=status,
+                    status=project_status(),
                     start_date=random_past_datetime(2).date(),
                     end_date=None,
                     created_at=random_past_datetime(2)
